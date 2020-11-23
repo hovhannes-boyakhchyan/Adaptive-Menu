@@ -31,13 +31,19 @@ a:active {transform: scale(0.9);}
 .location {
     display: flex;
     width: 100px;
+    z-index: 99;
+}
+.location__header {
+    display: flex;
+    align-items: center;
+    height: 25px;
 }
 .location span {
     color: rgb(63,76,107);
     font-size: 14px;
 }
 .location span:hover {
-    color: rgb(233, 232, 232);
+    color: rgb(123, 124, 129);
     cursor: pointer;
 }
 .location img {
@@ -72,7 +78,7 @@ a:active {transform: scale(0.9);}
 .select__lenguages {
     width: 60px;
     height: 25px;
-    z-index: 1;
+    z-index: 99;
 }
 .select__lenguages img {
     width: 20px;
@@ -101,7 +107,7 @@ a:active {transform: scale(0.9);}
     font-size: 14px;
 }
 .select__lenguages span:hover {
-    color: rgb(233, 232, 232);
+    color: rgb(123, 124, 129);
 }
 /* -----end selector lenguges----- */
 
@@ -116,7 +122,7 @@ a:active {transform: scale(0.9);}
     align-items: center;
 }
 .login__content a:hover {
-    color: rgb(233, 232, 232);
+    color: rgb(123, 124, 129);
 }
 .login__content img {
     width: 20px;
