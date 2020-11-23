@@ -1,7 +1,7 @@
 /* ----slider----- */
 .swiper-container {
     width: 100%;
-    height: 400px;
+    height: 500px;
     text-align: center;
 }
 .swiper-slide img {
@@ -76,7 +76,7 @@
     width: 100px;
     height: 35px;
     border-radius: 5px;
-    background: rgb(41, 52, 112);
+    background: rgb(63, 76, 107);
     outline-style: none;
 }
 .products__item .buy:hover {

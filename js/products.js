@@ -176,6 +176,13 @@ let TV = {
         cost: 663000,
         img: "./img/products/9e81.png"
     },
+    115347: {
+        category: "TVS",
+        brend: "Apple",
+        model: "Apple TV 32GB (4K 5th Generation) (MQD22) (Black)",
+        cost: 119000,
+        img: "./img/products/46d8b8aa6dd397c4fb341.png"
+    },
     115504: {
         category: "TVS",
         brend: "Xiaomi",
@@ -206,6 +213,13 @@ let TV = {
     },
 };
 let notebook = {
+    114751: {
+        category: "Notebooks",
+        brend: "LENOVO",
+        model: "PC Notebook LENOVO IdeaPad-130-81H7003UAD-i3 6060U-4GB-1TB-15.6 Dos Black",
+        cost: 269000,
+        img: "./img/products/288f84741.png"
+    },
     115268: {
         category: "Notebooks",
         brend: "LENOVO",
@@ -213,12 +227,26 @@ let notebook = {
         cost: 239000,
         img: "./img/products/115268.png"
     },
+    115329: {
+        category: "Notebooks",
+        brend: "Apple",
+        model: "Apple MacBook Air 13/Intel Core i5/1.6GHz dual-core 8th-generation/256GB/ (MVFJ2) Space Grey",
+        cost: 719000,
+        img: "./img/products/a59ff81.png"
+    },
     115534: {
         category: "Notebooks",
         brend: "HP",
         model: "HP 15 DA2181/I5 1021OU/4GB-1TB/2GB DOS-15.6 DVD (9HJ63EA BH5) Gray",
         cost: 359000,
         img: "./img/products/4330f41.png"
+    },
+    114743: {
+        category: "Notebooks",
+        brend: "LENOVO",
+        model: "PC Notebook LENOVO IdeaPad 130 81H60068AK (Dos Black)",
+        cost: 233000,
+        img: "./img/products/381c51.png"
     },
     114740: {
         category: "Notebooks",
@@ -234,12 +262,33 @@ let notebook = {
         cost: 719000,
         img: "./img/products/27eaba91f9346f404ec71.png"
     },
+    114742: {
+        category: "Notebooks",
+        brend: "HP",
+        model: "PC Notebook HP 250 G6 i3 15.6 (Dos Grey)",
+        cost: 215000,
+        img: "./img/products/643433e1610442483a731.png"
+    },
+    112332: {
+        category: "Notebooks",
+        brend: "Apple",
+        model: "Apple MacBook Pro 2018 A1989/MR9Q2 Space Grey",
+        cost: 1150000,
+        img: "./img/products/67aa6360d19f73daa7651.png"
+    },
     5815: {
         category: "Notebooks",
         brend: "ACER",
         model: "PC Notebook ACER ES1-572-30Q8 029 (Black)",
         cost: 247000,
         img: "./img/products/30861f129ee59916048e1.png"
+    },
+    102815: {
+        category: "Notebooks",
+        brend: "HP",
+        model: "PC Notebook HP 15-BS151NIA (Black)",
+        cost: 195000,
+        img: "./img/products/990ec82db9f6f76af37d1.png"
     },
     115932: {
         category: "Notebooks",
