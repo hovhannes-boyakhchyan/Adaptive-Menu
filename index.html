@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="icon" href="./img/logo.svg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -268,11 +269,46 @@
         </header>
 
         <main class="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video autoplay muted src="./img/slider/large.mp4"></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/1.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/2.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/3.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/4.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/5.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/6.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/7.jpg" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider/8.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
             <div class="conteiner">
                 <div class="products"></div>
             </div>
         </main>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script type="module" src="./js/showProducts.js"></script>
 </body>

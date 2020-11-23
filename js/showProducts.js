@@ -1,34 +1,38 @@
 import { products } from "./products.js";
+import { phone, TV, notebook } from "./products.js";
 //==============eji bacveluc heto =======
 window.onload = function () {
-    showProducts(); // glxavor ejum cucadrum enq mer bolor apranqner@
+    showProducts(TV); // glxavor ejum cucadrum enq bolor TV
+    showProducts(notebook);
+    showProducts(phone);
     checkCart(); // stugum enq zambjxum unenq avelacrac apranqne te che
     addToLocalStorage(); // @ntrac product@ uxarkum enq localStorageum pahelu
     index__cart(); // zambiuxi arka apranqnei qanak@ cucadrim enq zambiuxi vra
 }
 
-function showProducts() {
+function showProducts(product__type) {
+    let category_name = ""; // apranqneri blocki anvanman hamar(TVS, Phones...)
     let products__body = document.createElement("div");
     products__body.className = "products__body";
     document.querySelector(".products").prepend(products__body);
-    for (let key in products) {
+    for (let key in product__type) {
         let products__item = document.createElement("div");
         products__item.className = "products__item";
         products__body.prepend(products__item);
         // ---nkari texadrum-----
         let img = document.createElement("img");
         img.className = "item__img";
-        img.src = products[key]["img"];
+        img.src = product__type[key]["img"];
         products__item.prepend(img);
         // ---modeli anvanum---
         let model = document.createElement("p");
         model.className = "model";
-        model.append(products[key]["model"]);
+        model.append(product__type[key]["model"]);
         products__item.append(model);
         // ----gin---
         let cost = document.createElement("p");
         cost.className = "cost";
-        cost.append(products[key]["cost"].toLocaleString('ru') + " AMD");
+        cost.append(product__type[key]["cost"].toLocaleString('ru') + " AMD");
         products__item.append(cost);
         // ---button buy---
         let buy = document.createElement("button");
@@ -43,7 +47,12 @@ function showProducts() {
         span__buy.append("Buy");
         buy.append(span__buy);
         products__item.append(buy);
+        category_name = product__type[key]["category"]; // apranqneri tesak@ poxancum enq category_name mech (TV, PC..)
     }
+    let category = document.createElement("div");
+    category.className = "category";
+    category.append(category_name);
+    document.querySelector(".products").prepend(category); // Products divi mech nerarum enq apranqneri kategorianeri anvanumner@
 }
 // ---------------------apranqner@ avelacnum enq zambiuxi mech------------------------
 // ----karzinai hamar nor object enq sarqum vor @ntrac apranqner@ nerarenq dra mech-----

@@ -75,7 +75,7 @@ function showCart() {
         total__cost.append(total.toLocaleString('ru') + " AMD");
         total__block.append(total__cost);
         // ------------------------------------------------
-        let remuve = document.createElement("button");
+        let remuve = document.createElement("div");
         remuve.className = "remuve";
         remuve.setAttribute("data-articl", key);
         remuve.append("Remuve ✘");
