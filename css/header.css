@@ -394,6 +394,7 @@ input[type="search"] {
         background-color: rgb(80, 95, 131);
     }
     .login__content {
+        display: none; /* qani vor css aveli shuta bacum qan js fail@, css mech none talis vor js ic shut chbaci burgeri mechi qomponentner@, heto jsi mechic nor tvial componentin talis enq display block*/
         flex-direction: column;
         align-items: baseline;
         padding: 7px 10px 10px 15px;
@@ -428,11 +429,13 @@ input[type="search"] {
         font-size: 20px;
     }
     .cart {
+        display: none; /* qani vor css aveli shuta bacum qan js fail@, css mech none talis vor js ic shut chbaci burgeri mechi qomponentner@, heto jsi mechic nor tvial componentin talis enq display block*/
         width: 35px;
         height: 35px;
         margin: 12px 0 5px 10px;
     }
     .nav {
+        display: none; /* qani vor css aveli shuta bacum qan js fail@, css mech none talis vor js ic shut chbaci burgeri mechi qomponentner@, heto jsi mechic nor tvial componentin talis enq display block*/
         height: auto;
     }
     .nav .arrow-down {
