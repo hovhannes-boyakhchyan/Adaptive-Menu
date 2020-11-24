@@ -6,6 +6,13 @@ let phone = {
         cost: 400000,
         img: "./img/products/114226.png"
     },
+    102738: {
+        category: "Phones",
+        brend: "iphone",
+        model: "Apple iPhone 8 Plus 64GB (Space Gray)",
+        cost: 295000,
+        img: "./img/products/A-6872.png"
+    },
     102730: {
         category: "Phones",
         brend: "iphone",
@@ -20,6 +27,13 @@ let phone = {
         cost: 578000,
         img: "./img/products/114203.png"
     },
+    101693: {
+        category: "Phones",
+        brend: "iphone",
+        model: "Apple iPhone 8 Plus 256GB (Red)",
+        cost: 351000,
+        img: "./img/products/101693.png"
+    },
     114115: {
         category: "Phones",
         brend: "iphone",
@@ -33,6 +47,13 @@ let phone = {
         model: "Apple iPhone XR 256GB (White)",
         cost: 425000,
         img: "./img/products/102889.png"
+    },
+    115392: {
+        category: "Phones",
+        brend: "Xiaomi",
+        model: "Xiaomi Mi 10 256GB Grey",
+        cost: 324000,
+        img: "./img/products/115392.png"
     },
     115429: {
         category: "Phones",
@@ -69,6 +90,13 @@ let phone = {
         cost: 507000,
         img: "./img/products/72ee69c882.png"
     },
+    101240: {
+        category: "Phones",
+        brend: "NOKIA",
+        model: "NOKIA 7 Plus (Black)",
+        cost: 105000,
+        img: "./img/products/101240.png"
+    },
     114925: {
         category: "Phones",
         brend: "Samsung",
@@ -104,6 +132,13 @@ let phone = {
         cost: 449000,
         img: "./img/products/114236.png"
     },
+    114089: {
+        category: "Phones",
+        brend: "Samsung",
+        model: "Samsung Galaxy Note 10/N970F (Red)",
+        cost: 538000,
+        img: "./img/products/114089.png"
+    },
     112660: {
         category: "Phones",
         brend: "Samsung",
@@ -117,6 +152,13 @@ let phone = {
         model: "NOKIA 8110 (Yellow)",
         cost: 39000,
         img: "./img/products/102698.png"
+    },
+    112912: {
+        category: "Phones",
+        brend: "NOKIA",
+        model: "NOKIA 210 2019 (Grey)",
+        cost: 15000,
+        img: "./img/products/112912.png"
     },
     114402: {
         category: "Phones",
@@ -212,6 +254,50 @@ let TV = {
         img: "./img/products/828b96273462674a57171.png"
     },
 };
+let PC = {
+    102497: {
+        category: "Computers",
+        brend: "LENOVO",
+        model: "PC All In One LENOVO V310Z 10QG-000XAX Black",
+        cost: 359000,
+        img: "./img/products/1268230ac51.png"
+    },
+    102612: {
+        category: "Computers",
+        brend: "Dell",
+        model: "PC Desktop Dell OptiPlex 3050MT (Black)",
+        cost: 215000,
+        img: "./img/products/68230ac51.png"
+    },
+    5814: {
+        category: "Computers",
+        brend: "LENOVO",
+        model: "PC All In One LENOVO IDEACENTRE A10 510 (23ISH-F0CD00EPAX) (Black)",
+        cost: 512000,
+        img: "./img/products/51.png"
+    },
+    103217: {
+        category: "Computers",
+        brend: "Dell",
+        model: "PC Desktop Dell Vos Vostro3667",
+        cost: 179000,
+        img: "./img/products/bd6c80d1.png"
+    },
+    100945: {
+        category: "Computers",
+        brend: "Apple",
+        model: "Apple iMac 21.5 (MMQA2) (Silver)",
+        cost: 650000,
+        img: "./img/products/69f86eccae5d699ab1c31.png"
+    },
+    5813: {
+        category: "Computers",
+        brend: "LENOVO",
+        model: "PC All In One LENOVO E63 Z-10E0005KAX (Black)",
+        cost: 340000,
+        img: "./img/products/c9ee39ef7ccd173b3b2b1.png"
+    },
+};
 let notebook = {
     114751: {
         category: "Notebooks",
@@ -299,9 +385,9 @@ let notebook = {
     },
 };
 
-export { phone, TV, notebook };
+export { phone, TV, PC, notebook };
 // ----bolor objectner@ havakum enq mi objecti mech----------
-let products = Object.assign({}, phone, TV, notebook);
+let products = Object.assign({}, phone, TV, PC, notebook);
 export { products };
 
 
