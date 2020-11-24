@@ -1,8 +1,9 @@
 import { products } from "./products.js";
-import { phone, TV, notebook } from "./products.js";
+import { phone, TV, PC, notebook } from "./products.js";
 //==============eji bacveluc heto =======
 window.onload = function () {
     showProducts(TV); // glxavor ejum cucadrum enq bolor TV
+    showProducts(PC);
     showProducts(notebook);
     showProducts(phone);
     checkCart(); // stugum enq zambjxum unenq avelacrac apranqne te che
