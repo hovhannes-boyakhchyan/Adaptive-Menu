@@ -162,17 +162,22 @@ if (isMobile.any() && window.screen.width <= "838") {
     }
     // -----------------------------------------------------------------
 
+    // Minch JS faili zagruzken vor CSS@ burgeri mechi componentner@ ch@cucadri, cssi mech bolorin tvel enq display none, hima jsic noric het enq berum display block------
+    document.querySelector(".login__content").style.display = "flex";
+    document.querySelector(".cart").style.display = "block";
+    document.querySelector(".nav").style.display = "block";
+
     // -------slider swiper mobile settings---------
     let mobile_video_slide = document.querySelectorAll(".swiper-slide video");
     for (let i = 0; i < mobile_video_slide.length; i++) {
         mobile_video_slide[i].setAttribute("src", "./img/slider/mobile/" + [i + 1] + ".mp4"); // i = 0, videoner u nkarneri anunner@ 1 ica sksvum + 1
     }
 
+    // ---- slideri nkarner@ mobili poxeluc heto nor nerqevum miacnum enq slaidner@-----
     let mobile_img_slide = document.querySelectorAll(".swiper-container img")
     for (let i = 0; i < mobile_img_slide.length; i++) {
         mobile_img_slide[i].setAttribute("src", "./img/slider/mobile/" + [i + 1] + ".png");
     }
-    // ----nkarner@ mobili poxeluc heto nor nerqevum miacnum enq slaidner@-----
     // ---------------------------------------------------------------------------------------------
 }
 
