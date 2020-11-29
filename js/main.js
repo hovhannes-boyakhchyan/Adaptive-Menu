@@ -85,12 +85,56 @@ let img__loupe = document.querySelector("[alt = loupe]");
 
 document.querySelector(".wrapper").addEventListener("click", function (event) {
     if (event.target == search || event.target == img__loupe) {
-        let search = document.querySelector("#search").setAttribute("style", "transform: scale(1)");
-    } else {
+        search.setAttribute("style", "transform: scale(1)");
+    } else if (search.value == "") {
         search.setAttribute("style", "transform: scale(0)");
     }
 })
-// ---------
+// -----live search------
+document.querySelector(".loupe").addEventListener("click", searching);
+document.querySelector("#search").addEventListener("change", searching);
+
+function searching() {
+    clearSearch(); // skzbic zroiacnum enq search@
+    let search__value = search.value.toLowerCase().trim(); //toLowerCase() ov sax sarcum enq poqratar, trim() ov skzbum kam verjum ete probel drvac lini hani
+    let products__items = document.querySelectorAll(".products__item");
+    let products__names = document.querySelectorAll(".products__item .model");
+    let count = 0; // count@ nra hamara vor imananq searchi arcunqum qani hat apranqa hide exel, ete count@ hamnkni @ndhanur aprancneri canaki het uremn vochmi apranq chi gtel, "gri tenc apranq chka"
+    if (search__value != "") {
+        products__names.forEach(function (model, index) {
+            if (model.innerText.toLowerCase().search(search__value) == -1) {
+                products__items[index].classList.add("hide"); // vor@ chgtav hide enq anum
+                document.querySelectorAll(".category").forEach(style => style.classList.add("hide")); // searchi depcum categorianer@ pakum enq
+                // -----------------Title search results--------------------
+                document.querySelector(".TitleResultSearch").innerText = "Search results: " + search__value;
+                document.querySelector(".TitleResultSearch").removeAttribute("style"); // display:none cancel enq anum
+                // ---------------------------------------------------------
+                count++;
+                if (products__items.length == count) {
+                    document.querySelector(".products").setAttribute("style", "display:none");
+                } else { document.querySelector(".products").removeAttribute("style"); }
+            }
+        });
+    }
+
+    search.oninput = function () { // inputi cankacac popoxutiun@ stugum enq, ete input@ lriv datarka kataruma ifi mechin@
+        if (search.value == "") { // stugum enq search@ datarka te che
+            clearSearch();
+            document.querySelector(".products").removeAttribute("style"); // display:none cancel enq anum
+            document.querySelector(".TitleResultSearch").setAttribute("style", "display:none");
+            document.querySelectorAll(".category").forEach(style => style.classList.remove("hide")); // apranqneri categorianer@ bacum enq
+        }
+    }
+}
+
+function clearSearch() {
+    document.querySelectorAll(".products__item").forEach(item => {
+        if (item.classList.contains("hide")) {
+            item.classList.remove("hide");
+        }
+    });
+}
+// --------------------------------------------------------------------------
 
 // -------menu fixed----
 window.onscroll = function () {

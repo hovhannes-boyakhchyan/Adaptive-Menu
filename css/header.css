@@ -12,7 +12,7 @@ a:active {transform: scale(0.9);}
 }
 /* header header */
 .header {}
-.conteiner {}
+.container {}
 .header__header {
 }
 .header__body .menu.fixed {
@@ -246,7 +246,7 @@ a:active {transform: scale(0.9);}
 }
 .cart {
     display: block;
-    position: relative; /*-----------*/
+    position: relative;
     width: 27px;
     height: 27px;
     margin: 0 40px 0 0;
@@ -293,6 +293,11 @@ input[type="search"] {
 }
 .loupe img {
     width: 100%;
+}
+.TitleResultSearch {
+    margin: 30px 0 15px 10px;
+    color: #393939;
+    font-size: 26px;
 }
 /* ------end menu------ */
 .burger {

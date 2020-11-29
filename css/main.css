@@ -19,19 +19,20 @@
     font-weight: bold;
 }
 /* --------mein--------*/
-.category {
-    margin: 20px 0 3px 10px;
-    color: #393939;
-    font-size: 26px;
-    font-weight: bold;
-}
 .main .container {
     width: 100%;
+    min-height: 300px;
     margin: 0 auto;
     margin-top: 20px;
 }
 .main.fixed {
     margin-top: 48px;
+}
+.category {
+    margin: 20px 0 3px 20px;
+    color: #393939;
+    font-size: 26px;
+    font-weight: bold;
 }
 .products__body {
     display: flex;
@@ -49,6 +50,9 @@
     border: 1px solid rgb(203 203 203);
     width: 200px;
     transition: all 0.5s ease;
+}
+.hide {
+    display: none; /* searchi hamar*/
 }
 .products__item:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
