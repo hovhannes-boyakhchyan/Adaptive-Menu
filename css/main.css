@@ -22,8 +22,7 @@
 .main .container {
     width: 100%;
     min-height: 300px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 .main.fixed {
     margin-top: 48px;
@@ -94,6 +93,21 @@
     font-size: 18px;
     color: rgb(220, 224, 224);
 }
+.btnScrollToTop {
+    position: fixed;
+    padding: 10px;
+    right: 50px;
+    bottom: 50px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(63, 76, 107, 0.473);
+    border-radius: 50%;
+    background: rgba(163, 163, 163, 0.418);
+    cursor: pointer;
+}
+.btnScrollToTop img {
+    width: 100%;
+}
 
 @media(max-width: 838px) {
     .main .container {
@@ -117,6 +131,9 @@
     }
     .products__item .cost {
         font-size: 20px;
+    }
+    .btnScrollToTop {
+        right: 20px;
     }
 
 }
