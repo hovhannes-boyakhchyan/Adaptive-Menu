@@ -148,10 +148,10 @@ window.onscroll = function () {
     // ------------Button scroll to top--------------
     if (scrolled > 1200) {
         let btnScrollToTop = document.querySelector(".btnScrollToTop");
-        btnScrollToTop.style = "display:block";
+        btnScrollToTop.setAttribute("style", "display:block");
         btnScrollToTop.onclick = ToTop;
     } else {
-        document.querySelector(".btnScrollToTop").style = "display:none";
+        document.querySelector(".btnScrollToTop").removeAttribute("style");
     };
     let timer;
     function ToTop() {
