@@ -158,7 +158,7 @@ window.onscroll = function () {
         if (scrolled > 0) {
             window.scrollTo(0, scrolled);
             scrolled -= 50;
-            timer = setTimeout(ToTop, 15);
+            timer = setTimeout(ToTop, 10);
         } else {
             clearTimeout(timer);
             window.scrollTo(0, 0);
