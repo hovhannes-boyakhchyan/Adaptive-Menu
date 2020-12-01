@@ -36,7 +36,7 @@ document.querySelector(".wrapper").addEventListener("click", function (event) {
     } else {
         document.querySelector(".select__body").classList.remove("active__select");
     }
-})
+});
 
 for (let i = 0; i < select__item.length; i++) {
     if (select__item[i].classList.contains("defolt")) {
@@ -48,7 +48,7 @@ for (let i = 0; i < select__item.length; i++) {
         }
         checked__select.innerHTML = select__item[i].innerHTML;
         select__body.classList.remove("active__select");
-    })
+    });
 }
 // ------------
 
@@ -63,7 +63,7 @@ document.querySelector(".wrapper").addEventListener("click", function (event) {
     } else {
         location__body.classList.remove("active__location");
     }
-})
+});
 
 for (let i = 0; i < location__item.length; i++) {
     if (location__item[i].classList.contains("defolt")) {
@@ -75,7 +75,7 @@ for (let i = 0; i < location__item.length; i++) {
         }
         checked__location.innerHTML = location__item[i].innerHTML;
         location__body.classList.remove("active__location");
-    })
+    });
 }
 // --------------
 
@@ -136,20 +136,38 @@ function clearSearch() {
 }
 // --------------------------------------------------------------------------
 
-// -------menu fixed----
+// -------------------------Scroll--------------------------------
 window.onscroll = function () {
-    let scroll = pageYOffset;
-    if (scroll > 30) {
+    let scrolled = pageYOffset;
+    // -------menu fixed---------
+    if (scrolled > 25) {
         document.querySelector(".menu").classList.add("fixed");
-        document.querySelector(".main").classList.add("fixed");
     } else {
         document.querySelector(".menu").classList.remove("fixed");
-        document.querySelector(".main").classList.remove("fixed");
     }
+    // ------------Button scroll to top--------------
+    if (scrolled > 1200) {
+        let btnScrollToTop = document.querySelector(".btnScrollToTop");
+        btnScrollToTop.style = "display:block";
+        btnScrollToTop.onclick = ToTop;
+    } else {
+        document.querySelector(".btnScrollToTop").style = "display:none";
+    };
+    let timer;
+    function ToTop() {
+        if (scrolled > 0) {
+            window.scrollTo(0, scrolled);
+            scrolled -= 50;
+            timer = setTimeout(ToTop, 15);
+        } else {
+            clearTimeout(timer);
+            window.scrollTo(0, 0);
+        }
+    };
 }
+// --------------------------------------------------------------------
 
 // ----burger----
-
 let isMobile = {
     Android: function () { return navigator.userAgent.match(/Android/i); },
     BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); },
