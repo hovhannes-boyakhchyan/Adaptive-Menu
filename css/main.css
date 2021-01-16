@@ -49,7 +49,7 @@
     border: 1px solid rgb(203 203 203);
     width: 200px;
     transition: all 0.5s ease;
-}
+} 
 .hide {
     display: none; /* searchi hamar*/
 }
@@ -86,7 +86,7 @@
     cursor: pointer;
     background: rgb(76, 86, 139);
 }
-.products__item .buy img {
+ .products__item .buy img {
     width: 25px;
 }
 .products__item .buy span {
@@ -98,7 +98,7 @@
     position: fixed;
     padding: 10px;
     right: 20px;
-    bottom: 90px;
+    bottom: 30px;
     width: 30px;
     height: 30px;
     border: 2px solid rgba(63, 76, 107, 0.473);
@@ -108,7 +108,7 @@
 }
 .btnScrollToTop img {
     width: 100%;
-}
+} 
 
 @media(max-width: 838px) {
     .main .container {
@@ -134,7 +134,10 @@
         font-size: 20px;
     }
     .btnScrollToTop {
-        bottom: 50px;
+        width: 20px;
+        height: 20px;
+        bottom: 90px;
+        right: 14px;
     }
 
 }
