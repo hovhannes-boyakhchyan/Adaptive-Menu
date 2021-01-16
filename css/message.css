@@ -201,10 +201,10 @@
 }
 .feedBack input::placeholder {
     font-size: 14px;
-    padding: 0 0 0 5px;
 }
 .feedBack input {
     border-radius: 5px;
+    padding: 0 0 0 5px;
 }
 .send__message {
     display: flex;
