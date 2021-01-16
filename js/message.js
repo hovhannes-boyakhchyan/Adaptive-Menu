@@ -28,7 +28,7 @@ feedBack_header.addEventListener("click", () => {
 
 let close__btn = document.querySelector(".close__btn");
 
-close__btn.addEventListener("click", () => {
+close__btn.addEventListener("backbutton", () => {
     feedBack.classList.remove("active");
     close__btn.classList.remove("active");
     document.querySelector(".feedBack_header span").removeAttribute("style");
