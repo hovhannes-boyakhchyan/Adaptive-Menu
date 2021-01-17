@@ -117,12 +117,12 @@ a:active {transform: scale(0.9);}
     font-size: 18px;
     margin: 0 0 20px 0;
 }
-.remuve {
+.remove {
     color: rgb(63,76,107);
     cursor: pointer;
     outline-style: none;
 }
-.remuve:active {
+.remove:active {
     color: rgb(209, 209, 209);
 }
 .payment {
@@ -248,7 +248,7 @@ a:active {transform: scale(0.9);}
         font-size: 22px;
         margin: 0 0 0 10px;
     }
-    .remuve {
+    .remove {
         font-size: 18px;
     }
     .total__block {
