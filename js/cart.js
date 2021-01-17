@@ -2,7 +2,7 @@ import { products } from "./products.js";
 window.onload = function () {
     exportToCart(); // localic texapoxum enq carti mech, bacelov amboxch nkaragir@ ejum cucadrelu hamar
     showCart(); // eji vra cucadrum e carti aprancner@
-    remuve__count(); // - count +
+    remove__count(); // - count +
     cartStatus(); // ziambjuxi datark kam liq@ linel@ eji vra
     // calc__total__sum();
 }
@@ -75,15 +75,15 @@ function showCart() {
         total__cost.append(total.toLocaleString('ru') + " AMD");
         total__block.append(total__cost);
         // ------------------------------------------------
-        let remuve = document.createElement("div");
-        remuve.className = "remuve";
-        remuve.setAttribute("data-articl", key);
-        remuve.append("Remuve ✘");
-        total__block.append(remuve);
+        let remove = document.createElement("div");
+        remove.className = "remove";
+        remove.setAttribute("data-articl", key);
+        remove.append("Remove ✘");
+        total__block.append(remove);
         // ------------------------------------------------
     }
 }
-function remuve__count() {
+function remove__count() {
     let minus = document.querySelectorAll(".minus");
     for (let i = 0; i < minus.length; i++) {
         minus[i].onclick = function (event) {
@@ -94,7 +94,7 @@ function remuve__count() {
             localStorage.setItem("cart", JSON.stringify(saved_articals)); //qanak@ poxeluc heto petka noric pahpanenq localStorage tvial pahi drutiamb ---
             exportToCart(); // noric kardum enq inch unenq pahpanac (123465:3) vor bacenq et artikulov ev uxarkenq carti mech
             showCart(); // popoxutiunneric heto noric artacenq carti mechi apranqner@ eji vra
-            remuve__count(); //-- remuve__count funkcian kanchum enq vorpezi showCart funkcian katareluc heto noric aktivana mer knopkeq@---
+            remove__count(); //-- remove__count funkcian kanchum enq vorpezi showCart funkcian katareluc heto noric aktivana mer knopkeq@---
         }
     }
     let plus = document.querySelectorAll(".plus");
@@ -107,18 +107,18 @@ function remuve__count() {
             localStorage.setItem("cart", JSON.stringify(saved_articals));
             exportToCart();
             showCart();
-            remuve__count();
+            remove__count();
         }
     }
-    let remuve = document.querySelectorAll(".remuve");
-    for (let i = 0; i < remuve.length; i++) {
-        remuve[i].onclick = function (event) {
+    let remove = document.querySelectorAll(".remove");
+    for (let i = 0; i < remove.length; i++) {
+        remove[i].onclick = function (event) {
             let articl = (event.target.dataset.articl);
             delete (saved_articals[articl]);
             localStorage.setItem("cart", JSON.stringify(saved_articals));
             exportToCart();
             showCart();
-            remuve__count();
+            remove__count();
             cartStatus();
         }
     }
